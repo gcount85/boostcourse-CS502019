@@ -7,7 +7,7 @@
 int main(void)
 {
     char *s = get_string("s: ");
-    char *t = malloc(strlen(s) + 1); // malloc(memory allocation)은 비워진 메모리를 줌
+    char *t = malloc(strlen(s) + 1); // malloc(memory allocation)은 비워진 메모리 영역의 첫 주소를 줌
 
     strcopy(t, s) // t에 s의 내용을 복사하는 함수 -> 작동기전은 아래 for 루프와 비슷하다
 
